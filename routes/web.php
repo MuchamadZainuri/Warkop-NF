@@ -13,10 +13,38 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('toko.index');
+
+
+Route::prefix('/')->group(function(){
+
+    Route::get('', function () {
+        return view('toko.index');
+    });
+    Route::get('about', function () {
+        return view('toko.about');
+    });
+    Route::get('service', function () {
+        return view('toko.service');
+    });
+    Route::get('menu', function () {
+        return view('toko.menu');
+    });
+    Route::get('contact', function () {
+        return view('toko.contact');
+    });
+    Route::get('testimonial', function () {
+        return view('toko.testimonial');
+    });
+    Route::get('reservation', function () {
+        return view('toko.reservation');
+    });
+
+});
+Route::prefix('admin')->group(function(){
+
+    Route::get('/', function () {
+        return view('admin.main');
+    });
+
 });
 
-Route::get('admin', function () {
-    return view('admin.main');
-});
