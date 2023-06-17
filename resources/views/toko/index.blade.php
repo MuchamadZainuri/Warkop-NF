@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-
 <head>
     <meta charset="utf-8">
     <title>WARKOP - NF</title>
@@ -13,7 +12,7 @@
     rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="assets/dist/img/favicon.ico" rel="icon">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,18 +22,18 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="assets/plugins/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/plugins/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="assets/dist/css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+            <a href="" class="navbar-brand px-lg-4 m-0">
                 <h1 class="m-0 display-4 text-uppercase text-white">WARKOP - NF</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -42,8 +41,8 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="" class="nav-item nav-link active">Home</a>
+                    <a href="about" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <a href="menu.html" class="nav-item nav-link">Menu</a>
                     <div class="nav-item dropdown">
@@ -65,7 +64,7 @@
         <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/index (1).jpg" alt="Image">
+                    <img class="w-100" src="assets/dist/img/index (1).jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h2 class="text-primary font-weight-medium m-0">Kami Telah Melayani</h2>
                         <h1 class="display-1 text-white m-0">COFFEE</h1>
@@ -73,7 +72,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/index (2).jpg" alt="Image">
+                    <img class="w-100" src="assets/dist/img/index (2).jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h2 class="text-primary font-weight-medium m-0">Kami Telah Melayani</h2>
                         <h1 class="display-1 text-white m-0">COFFEE</h1>
@@ -108,7 +107,7 @@
                 </div>
                 <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.png" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="assets/dist/img/about.png" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-4 py-0 py-lg-5">
@@ -136,7 +135,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/barista.jpg" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="assets/dist/img/barista.jpg" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-users service-icon"></i>Barista Profesional</h4>
@@ -147,7 +146,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/beans.jpg" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="assets/dist/img/beans.jpg" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-coffee service-icon"></i>Biji Kopi Terbaik</h4>
@@ -158,7 +157,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/cafe.jpg" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="assets/dist/img/cafe.jpg" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-building service-icon"></i>Tempat yang nyaman</h4>
@@ -169,7 +168,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/toast.jpg" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="assets/dist/img/toast.jpg" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-utensils service-icon"></i>Berbagai makanan</h4>
@@ -214,7 +213,7 @@
                     <h1 class="mb-5">Coffee</h1>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/hot-caffe-american0.jpg" alt="">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/hot-caffe-american0.jpg" alt="">
                             <h5 class="menu-price">10K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -225,7 +224,7 @@
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/hot-esspress0.jpg" alt="">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/hot-esspress0.jpg" alt="">
                             <h5 class="menu-price">10K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -236,7 +235,7 @@
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/iced-caramel-macchiat0.jpg" alt="">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/iced-caramel-macchiat0.jpg" alt="">
                             <h5 class="menu-price">12K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -247,7 +246,7 @@
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/iced-coffe-with-m1lk.jpg" alt="">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/iced-coffe-with-m1lk.jpg" alt="">
                             <h5 class="menu-price">13K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -262,7 +261,7 @@
                     <h1 class="mb-5">Snack</h1>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/snck-hot-breaad.jpg" alt="">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-hot-breaad.jpg" alt="">
                             <h5 class="menu-price">8K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -274,7 +273,7 @@
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/snck-minipizza.jpg" alt="">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-minipizza.jpg" alt="">
                             <h5 class="menu-price">10K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -287,7 +286,7 @@
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/snck-cookies.jpg" alt="">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-cookies.jpg" alt="">
                             <h5 class="menu-price">6K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -299,7 +298,7 @@
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/snck-oreo.jpg" alt="">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-oreo.jpg" alt="">
                             <h5 class="menu-price">5K</h5>
                         </div>
                         <div class="col-8 col-sm-9">
@@ -389,7 +388,7 @@
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid" src="assets/dist/img/testimonial-1.jpg" alt="">
                         <div class="ml-3">
                             <h4>Sintya Megahary</h4>
                             <i>Desainer Busana</i>
@@ -399,7 +398,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid" src="assets/dist/img/testimonial-2.jpg" alt="">
                         <div class="ml-3">
                             <h4>Boby Kopling</h4>
                             <i>Pembalap</i>
@@ -411,7 +410,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                        <img class="img-fluid" src="assets/dist/img/testimonial-3.jpg" alt="">
                         <div class="ml-3">
                             <h4>Sarah Clarson</h4>
                             <i>Ibu Rumah Tangga</i>
@@ -421,7 +420,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                        <img class="img-fluid" src="assets/dist/img/testimonial-4.jpg" alt="">
                         <div class="ml-3">
                             <h4>Ezkadon Hury</h4>
                             <i>IT Master</i>
