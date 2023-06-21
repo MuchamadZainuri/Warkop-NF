@@ -65,10 +65,10 @@
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Sosial Media</h4>
                 <p>ikuti sosial media kami</p>
                 <div class="d-flex justify-content-start">
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://twitter.com/STTTerpaduNF1"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://github.com/Ardikaoktavian/iseng"><i class="fab fa-github"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://web.facebook.com/STTTerpaduNF/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/sttterpadunf/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://twitter.com/STTTerpaduNF1" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://github.com/Ardikaoktavian/iseng" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://web.facebook.com/STTTerpaduNF/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/sttterpadunf/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">

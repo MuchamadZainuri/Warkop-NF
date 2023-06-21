@@ -25,7 +25,7 @@
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid" src="assets/dist/img/testimonial-1.jpg" alt="">
                         <div class="ml-3">
                             <h4>Sintya Megahary</h4>
                             <i>Desainer Busana</i>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid" src="assets/dist/img/testimonial-2.jpg" alt="">
                         <div class="ml-3">
                             <h4>Boby Kopling</h4>
                             <i>Pembalap</i>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                        <img class="img-fluid" src="assets/dist/img/testimonial-3.jpg" alt="">
                         <div class="ml-3">
                             <h4>Sarah Clarson</h4>
                             <i>Ibu Rumah Tangga</i>
@@ -57,10 +57,10 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                        <img class="img-fluid" src="/assets/dist/img/testimonial-4.jpg" alt="">
                         <div class="ml-3">
                             <h4>Ezkadon Hury</h4>
-                            <i>IT Master</i>
+                            <i>Programmer</i>
                         </div>
                     </div>
                     <p class="m-0">Biar ga pusing sama kerjaan yang ngoding terus, 

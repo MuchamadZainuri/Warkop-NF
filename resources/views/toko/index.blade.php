@@ -25,7 +25,7 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h2 class="text-primary font-weight-medium m-0">Kami Telah Melayani</h2>
                         <h1 class="display-1 text-white m-0">COFFEE</h1>
-                        <h2 class="text-white m-0">* Sejak 2000 *</h2>
+                        <h2 class="text-white m-0">* Sejak tahun 2000 *</h2>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -33,7 +33,7 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h2 class="text-primary font-weight-medium m-0">Kami Telah Melayani</h2>
                         <h1 class="display-1 text-white m-0">COFFEE</h1>
-                        <h2 class="text-white m-0">* Sejak 2000 *</h2>
+                        <h2 class="text-white m-0">* Sejak tahun 2000 *</h2>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
         <div class="container">
             <div class="section-title">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h4>
-                <h1 class="display-4">Melayani Sejak 2000</h1>
+                <h1 class="display-4">Melayani Sejak tahun 2000</h1>
             </div>
             <div class="row">
                 <div class="col-lg-4 py-0 py-lg-5">
