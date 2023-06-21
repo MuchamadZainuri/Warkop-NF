@@ -66,7 +66,7 @@
                 <p>ikuti sosial media kami</p>
                 <div class="d-flex justify-content-start">
                     <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://twitter.com/STTTerpaduNF1" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://github.com/Ardikaoktavian/iseng" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://github.com/MuchamadZainuri/Warkop-NF" target="_blank"><i class="fab fa-github"></i></a>
                     <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://web.facebook.com/STTTerpaduNF/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/sttterpadunf/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
