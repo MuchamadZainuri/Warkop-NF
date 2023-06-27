@@ -39,6 +39,10 @@ Route::prefix('/')->group(function(){
         return view('toko.reservation');
     });
 
+    Route::get('loker', function () {
+        return view('toko.loker');
+    });
+
 });
 Route::prefix('admin')->group(function(){
 
@@ -52,3 +56,4 @@ Route::prefix('admin')->group(function(){
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    
