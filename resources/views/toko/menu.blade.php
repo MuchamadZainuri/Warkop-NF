@@ -10,6 +10,7 @@
                         <div class="dropdown-menu text-capitalize">
                             <a href="/reservation" class="dropdown-item">Reservation</a>
                             <a href="/testimonial" class="dropdown-item">Testimonial</a>
+                            <a href="/loker" class="dropdown-item">Karir</a>
                         </div>
                     </div>
                     <a href="/contact" class="nav-item nav-link">Contact</a>
