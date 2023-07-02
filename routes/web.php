@@ -38,9 +38,11 @@ Route::prefix('/')->group(function(){
     Route::get('reservation', function () {
         return view('toko.reservation');
     });
-
     Route::get('loker', function () {
         return view('toko.loker');
+    });
+    Route::get('detail', function () {
+        return view('toko.detail');
     });
 
 });

@@ -43,14 +43,17 @@
                 <h1 class="mb-5">Coffee</h1>
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                    <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/hot-caffe-american0.jpg" alt="">
                         <h5 class="menu-price">10K</h5>
+                    </a>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Hot Caffe Americano</h4>
                         <p class="m-0">Bidikan espresso dengan air panas di atasnya menciptakan lapisan crema yang tipis
                             berpuncak pada cangkir yang sangat kaya ini dengan kedalaman dan nuansa</p>
                     </div>
+                    
                 </div>
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">

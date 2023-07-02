@@ -54,40 +54,40 @@
       <th scope="row">2</th>
       <td>Kasir</td>
       <td>Full Time</td>
-      <td><a target="_blank" href="" class="btn btn-dark btn-effect"> Apply Now </a></td>
+      <td><a target="_blank" href="mailto:ardikaardika17436@gmail.com" class="btn btn-dark btn-effect"> Apply Now </a></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <th scope="row">3</th>
       <td>Kasir</td>
       <td>Full Time</td>
       <td><a target="_blank" href="" class="btn btn-dark btn-effect"> Apply Now </a></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <th scope="row">4</th>
       <td>Kasir</td>
       <td>Full Time</td>
       <td><a target="_blank" href="" class="btn btn-dark btn-effect"> Apply Now </a></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <th scope="row">5</th>
       <td>Kasir</td>
       <td>Full Time</td>
       <td><a target="_blank" href="" class="btn btn-dark btn-effect"> Apply Now </a></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <th scope="row">6</th>
       <td>Kasir</td>
       <td>Full Time</td>
       <td><a target="_blank" href="" class="btn btn-dark btn-effect"> Apply Now </a></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <th scope="row">7</th>
       <td>Kasir</td>
       <td>Full Time</td>
       <td><a target="_blank" href="" class="btn btn-dark btn-effect"> Apply Now </a></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <th scope="row">8</th>
       <td>Kasir</td>
       <td>Full Time</td>
       <td><a target="_blank" href="" class="btn btn-dark btn-effect"> Apply Now </a></td>
