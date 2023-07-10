@@ -2,48 +2,70 @@
 
 @section('navbar')
     <a href="/" class="nav-item nav-link ">Home</a>
-    <a href="/about" class="nav-item nav-link ">About</a>
-    <a href="/service" class="nav-item nav-link ">Service</a>
-    <a href="/menu" class="nav-item nav-link active">Menu</a>
+    <a href="/about" class="nav-item nav-link">About</a>
+    <a href="/service" class="nav-item nav-link">Service</a>
+    <a href="/menu" class="nav-item nav-link">Menu</a>
     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu text-capitalize">
                             <a href="/reservation" class="dropdown-item">Reservation</a>
                             <a href="/testimonial" class="dropdown-item">Testimonial</a>
-                            <a href="/loker" class="dropdown-item">Karir</a>
+                            <a href="/loker" class="dropdown-item active">Karir</a>
                         </div>
                     </div>
                     <a href="/contact" class="nav-item nav-link">Contact</a>
 @endsection
 
 @section('content')
-<div class="row">
-    <div class="col-md-4">
-        <div class="card" style="width: 50%;">
-            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img" alt="">
-            <div class="card-body">
-                <p class="card-text">PRODUK</p>
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Detail</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Detail</p>
             </div>
         </div>
     </div>
-  
-    <div class="col-md-8">
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Address</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <!-- Page Header End -->
+
+    <div class="row">
+      <div class="col-md-4">
+          <div class="card" style="width: 50%;">
+              <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img" alt=""> 
+              <div class="card-body">
+                  <p class="card-text">PRODUK</p>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Quantity</label>
-                <input type="number" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
+    
+        {{-- BAGIAN FORM DIBAWAH MASIH BELOM BENER --}}
+        <div class="col-md-8">
+            <form>
+                    <div class="mb-3">
+                        {{-- NAMA PRODUK SESUAIKAN SAMA DENGAN MENU YANG DIPILIH --}}
+                        <label for="exampleInputEmail1" class="form-label">Hot Caffe Americano</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputHarga1" class="form-label" >Rp. 10.000
+                        <input type="text" class="form-control" id="exampleInputHarga1" readonly>
+                    </label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Quantity
+                        <input type="number" class="form-control" id="exampleInputPassword1">
+                    </label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
-  </div>
+  
+
 @endsection
