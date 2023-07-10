@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WarkopController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,13 +48,42 @@ Route::prefix('/')->group(function(){
     });
 
 });
+
 Route::prefix('admin')->group(function(){
 
-    Route::get('/', function () {
-        return view('admin.main');
-    });
+    Route::get(
+        '/', 
+        [WarkopController::class, 'index']
+    )->name('admin.index') ;
 
-});
+    Route::get(
+        '/orders',
+        [WarkopController::class, 'orders']
+    )->name('admin.order');
+
+    Route::get(
+        '/products',
+        [WarkopController::class, 'products']
+    )->name('admin.product');
+    
+    Route::get(
+        '/users',
+        [WarkopController::class, 'users']
+    )->name('admin.user');
+    
+    Route::get(
+        '/supply',
+        [WarkopController::class, 'supply']
+    )->name('admin.supply');
+    
+    Route::get(
+        '/categories',
+        [WarkopController::class, 'categories']
+    )->name('admin.category');
+
+
+
+    });
 
 
 Auth::routes();
