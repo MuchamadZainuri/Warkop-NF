@@ -41,6 +41,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <h1 class="mb-5">Coffee</h1>
+                {{-- MENU COFFE | PERTAMA --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
                     <a href="/detail" class="btn">
@@ -53,12 +54,14 @@
                         <p class="m-0">Bidikan espresso dengan air panas di atasnya menciptakan lapisan crema yang tipis
                             berpuncak pada cangkir yang sangat kaya ini dengan kedalaman dan nuansa</p>
                     </div>
-                    
                 </div>
+                {{-- MENU COFFE | KEDUA --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                        <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/hot-esspress0.jpg" alt="">
                         <h5 class="menu-price">10K</h5>
+                        </a>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Hot Esspresso</h4>
@@ -66,10 +69,13 @@
                             dan rasa manis karamel adalah inti dari semua yang kami lakukan.</p>
                     </div>
                 </div>
+                {{-- MENU COFFE | KETIGA --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                        <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/hot-flat-wh1te.jpg" alt="">
                         <h5 class="menu-price">10K</h5>
+                        </a>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Hot Flat White</h4>
@@ -77,10 +83,13 @@
                             susu murni untuk menciptakan rasa yang tidak terlalu kuat, tidak terlalu kental, dan pas.</p>
                     </div>
                 </div>
+                {{-- MENU COFFE | KEEMPAT --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                        <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/iced-flat-white.jpg" alt="">
                         <h5 class="menu-price">10K</h5>
+                        </a>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Iced Flat White</h4>
@@ -88,10 +97,13 @@
                             dan es untuk menciptakan rasa yang tidak terlalu kuat, tidak terlalu kental, dan pas.</p>
                     </div>
                 </div>
+                {{-- MENU COFFE | KELIMA --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                        <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/iced-caramel-macchiat0.jpg" alt="">
                         <h5 class="menu-price">12K</h5>
+                        </a>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Iced Caramel Macchiato</h4>
@@ -99,10 +111,13 @@
                             susu dan es, lalu tambahkan dengan gerimis karamel untuk hasil akhir yang sangat manis.</p>
                     </div>
                 </div>
+                {{-- MENU COFFE | KEENAM --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                        <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/iced-coffe-with-m1lk.jpg" alt="">
                         <h5 class="menu-price">13K</h5>
+                        </a>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Iced Coffe With Milk</h4>
@@ -114,6 +129,7 @@
             <!--Snack-->
             <div class="col-lg-6">
                 <h1 class="mb-5">Snack</h1>
+                {{-- MENU SNACK | PERTAMA --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-hot-breaad.jpg" alt="">
@@ -126,10 +142,13 @@
                             Bisa digunakan untuk sarapan atau cemilan, dan dapat dinikmati dengan beragam topping atau saus.</p>
                     </div>
                 </div>
+                {{-- MENU SNACK | KEDUA --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                        <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-minipizza.jpg" alt="">
                         <h5 class="menu-price">10K</h5>
+                        </a>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Mini Pizza</h4>
@@ -139,10 +158,13 @@
                             dan bahan-bahan lain sesuai selera.</p>
                     </div>
                 </div>
+                {{-- MENU SNACK | KETIGA --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                        <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-cookies.jpg" alt="">
                         <h5 class="menu-price">6K</h5>
+                        </a>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Cookies</h4>
@@ -151,10 +173,13 @@
                             Cookies dapat ditemukan dalam berbagai rasa dan bentuk, dari yang tradisional hingga yang lebih kreatif. </p>
                     </div>
                 </div>
+                {{-- MENU SNACK | KEEMPAT --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                        <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-oreo.jpg" alt="">
                         <h5 class="menu-price">5K</h5>
+                        </a>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>Oreo</h4>
@@ -163,10 +188,13 @@
                             Oreo dapat dimakan sendiri atau digunakan sebagai bahan dalam berbagai resep.</p>
                     </div>
                 </div>
+                {{-- MENU SNACK | KELIMA --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                        <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-popcorn.jpg" alt="">
                         <h5 class="menu-price">5K</h5>
+                        </a>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>PopCorn</h4>
@@ -175,10 +203,13 @@
                             Popcorn juga dapat digunakan sebagai bahan dasar dalam berbagai makanan lain seperti trail mix. </p>
                     </div>
                 </div>
+                {{-- MENU SNACK | KEENAM --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                        <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-french-fries.jpg" alt="">
                         <h5 class="menu-price">6K</h5>
+                        </a>
                     </div>
                     <div class="col-8 col-sm-9">
                         <h4>French Fries</h4>
@@ -188,6 +219,7 @@
                             saus mayones, saus tartar, atau saus lainnya. </p>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
