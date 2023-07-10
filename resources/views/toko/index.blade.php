@@ -13,7 +13,8 @@
                             <a href="/loker" class="dropdown-item">Karir</a>
                         </div>
                     </div>
-                    <a href="/contact" class="nav-item nav-link">Contact</a>
+    <a href="/contact" class="nav-item nav-link">Contact</a>
+    <a target="" href="/login" class="btn btn-primary btn-effect"> Login </a>
 @endsection
 
 @section('content')

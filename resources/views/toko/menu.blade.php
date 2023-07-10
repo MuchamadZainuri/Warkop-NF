@@ -16,7 +16,7 @@
                     <a href="/contact" class="nav-item nav-link">Contact</a>
 @endsection
 
-@section('content')
+@section('content') 
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
@@ -26,6 +26,18 @@
                 <p class="m-0 text-white px-2">/</p>
                 <p class="m-0 text-white">Menu</p>
             </div>
+            <!-- Search Form -->
+            <br>
+            <form class="form-inline justify-content-center mb-4" action="/menu" method="get">
+                <div class="input-group">
+                    <input type="text" class="form-control p-4" placeholder="Cari Menu" style="height: 30px; width: auto;" id="search">
+                    <div class="input-group-append">
+                        <button class="searchButton btn btn-primary font-weight-bold px-4" type="submit"><i class="fas fa-search fa-lg"></i></button>
+                    </div>
+                </div>
+            </form>
+            <!--Search Form End -->
+        </div>
         </div>
     </div>
     <!-- Page Header End -->
@@ -50,7 +62,7 @@
                     </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>Hot Caffe Americano</h4>
+                        <a href="detail"><h4>Caffe Americano</h4></a>
                         <p class="m-0">Bidikan espresso dengan air panas di atasnya menciptakan lapisan crema yang tipis
                             berpuncak pada cangkir yang sangat kaya ini dengan kedalaman dan nuansa</p>
                     </div>
@@ -64,7 +76,7 @@
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>Hot Esspresso</h4>
+                        <a href="detail"><h4>Hot Esspresso</h4></a>
                         <p class="m-0">Espresso Roast khas kami yang halus dengan rasa yang kaya
                             dan rasa manis karamel adalah inti dari semua yang kami lakukan.</p>
                     </div>
@@ -78,7 +90,7 @@
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>Hot Flat White</h4>
+                        <a href="detail"><h4>Hot Flat White</h4></a>
                         <p class="m-0">Tembakan ristretto halus dari espresso mendapatkan jumlah kukus yang sempurna
                             susu murni untuk menciptakan rasa yang tidak terlalu kuat, tidak terlalu kental, dan pas.</p>
                     </div>
@@ -92,7 +104,7 @@
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>Iced Flat White</h4>
+                        <a href="detail"><h4>Iced Flat White</h4></a>
                         <p class="m-0">Tembakan espresso ristretto yang halus mendapatkan jumlah susu murni yang sempurna
                             dan es untuk menciptakan rasa yang tidak terlalu kuat, tidak terlalu kental, dan pas.</p>
                     </div>
@@ -106,7 +118,7 @@
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>Iced Caramel Macchiato</h4>
+                        <a href="detail"><h4>Iced Caramel Macchiato</h4></a>
                         <p class="m-0">Kami mengombinasikan espresso kaya rasa dengan sirup rasa vanila,
                             susu dan es, lalu tambahkan dengan gerimis karamel untuk hasil akhir yang sangat manis.</p>
                     </div>
@@ -120,7 +132,7 @@
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>Iced Coffe With Milk</h4>
+                        <a href="detail"><h4>Iced Coffe With Milk</h4></a>
                         <p class="m-0">Iced Coffee Blend yang baru diseduh dengan susu disajikan
                             dingin dan manis di atas es. Angkat yang benar-benar, serius, dan menyegarkan untuk hari apa pun.</p>
                     </div>
@@ -132,11 +144,13 @@
                 {{-- MENU SNACK | PERTAMA --}}
                 <div class="row align-items-center mb-5">
                     <div class="col-4 col-sm-3">
+                        <a href="/detail" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-hot-breaad.jpg" alt="">
                         <h5 class="menu-price">8K</h5>
+                        </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>Hot Bread</h4>
+                        <a href="detail"><h4>Hot Bread</h4></a>
                         <p class="m-0">Roti yang baru saja dipanggang dan masih hangat saat disajikan. 
                             Roti ini lembut dan gurih dengan aroma yang menggoda. 
                             Bisa digunakan untuk sarapan atau cemilan, dan dapat dinikmati dengan beragam topping atau saus.</p>
@@ -151,7 +165,7 @@
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>Mini Pizza</h4>
+                        <a href="detail"><h4>Mini Pizza</h4></a>
                         <p class="m-0">Varian pizza yang lebih kecil dari ukuran biasa, 
                             biasanya lebih mudah untuk dimakan secara individual. 
                             Mini pizza memiliki crust yang tipis dan dilapisi dengan saus tomat, keju, 
@@ -167,7 +181,7 @@
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>Cookies</h4>
+                        <a href="detail"><h4>Cookies</h4></a>
                         <p class="m-0">Makanan kering yang terbuat dari campuran tepung, gula, mentega atau minyak sayur, 
                             telur, dan bahan-bahan tambahan seperti coklat chips, atau kacang-kacangan. 
                             Cookies dapat ditemukan dalam berbagai rasa dan bentuk, dari yang tradisional hingga yang lebih kreatif. </p>
@@ -182,7 +196,7 @@
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>Oreo</h4>
+                        <a href="detail"><h4>Oreo</h4></a>
                         <p class="m-0">Oreo dikenal dengan cetakan "Oreo" di atasnya dan memiliki dua 
                             lapisan tepung gandum hitam dengan lapisan keju krim di tengah. 
                             Oreo dapat dimakan sendiri atau digunakan sebagai bahan dalam berbagai resep.</p>
@@ -197,7 +211,7 @@
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>PopCorn</h4>
+                        <a href="detail"><h4>PopCorn</h4></a>
                         <p class="m-0">Popcorn dapat disajikan dengan berbagai variasi rasa, seperti gula, 
                             garam, atau rempah-rempah. 
                             Popcorn juga dapat digunakan sebagai bahan dasar dalam berbagai makanan lain seperti trail mix. </p>
@@ -212,7 +226,7 @@
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <h4>French Fries</h4>
+                        <a href="detail"><h4>French Fries</h4></a>
                         <p class="m-0">French fries adalah makanan yang dibuat dari irisan kentang 
                             yang digoreng dalam minyak panas hingga renyah.
                             French fries dapat disajikan dengan berbagai saus seperti saus tomat, 

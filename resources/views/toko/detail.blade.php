@@ -6,11 +6,11 @@
     <a href="/service" class="nav-item nav-link">Service</a>
     <a href="/menu" class="nav-item nav-link">Menu</a>
     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu text-capitalize">
                             <a href="/reservation" class="dropdown-item">Reservation</a>
                             <a href="/testimonial" class="dropdown-item">Testimonial</a>
-                            <a href="/loker" class="dropdown-item active">Karir</a>
+                            <a href="/loker" class="dropdown-item">Karir</a>
                         </div>
                     </div>
                     <a href="/contact" class="nav-item nav-link">Contact</a>
@@ -31,6 +31,7 @@
     </div>
     <!-- Page Header End -->
 
+    <div class="container">
     <div class="row">
       <div class="col-md-4">
           <div class="card" style="width: 50%;">
@@ -66,6 +67,6 @@
             </form>
         </div>
     </div>
-  
+    </div>
 
 @endsection
