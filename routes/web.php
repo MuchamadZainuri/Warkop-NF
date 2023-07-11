@@ -29,6 +29,11 @@ use Spatie\Permission\Contracts\Role;
         [HomeController::class, 'detail']
     )->name('toko.detail')->middleware('iscustomer');
 
+    Route::get(
+        'keranjang', 
+        [HomeController::class, 'keranjang']
+    )->name('toko.keranjang')->middleware('iscustomer');
+
 
 Route::get(
     'admin', 
@@ -106,7 +111,7 @@ Route::middleware(['auth','role:admin'])->name('admin.')->prefix('admin')->group
     // 
 
 
-    Route::get('/products/search',[WarkopController::class, 'search']);
+    Route::get('/menu/search',[WarkopController::class, 'search']);
     
 Auth::routes();
 

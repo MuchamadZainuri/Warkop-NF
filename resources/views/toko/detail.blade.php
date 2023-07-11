@@ -56,9 +56,9 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Detail</h1>
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Detail </h1>
             <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-white"><a class="text-white" href="/">Home</a></p>
                 <p class="m-0 text-white px-2">/</p>
                 <p class="m-0 text-white">Detail</p>
             </div>
@@ -77,21 +77,23 @@
             </div>
         </div>
     
-        {{-- BAGIAN FORM DIBAWAH MASIH BELOM BENER --}}
         <div class="col-md-8">
-            <form>
+            <form action="/keranjang" method="GET">
                     <div class="mb-3">
-                        {{-- NAMA PRODUK SESUAIKAN SAMA DENGAN MENU YANG DIPILIH --}}
-                        <label for="exampleInputEmail1" class="form-label">Hot Caffe Americano</label>
+                        {{-- NAMA PRODUK SESUAIKAN SAMA DENGAN MENU YANG DIPILIH HARUS SESUAI DI DATABASE--}}
+                        <label for="exampleInputEmail1" class="form-label">
+                        <input type="text" class="form-control" id="exampleInputEmail1" name="nama" placeholder="Hot Caffe Americano" readonly>
+                        </label>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputHarga1" class="form-label" >Rp. 10.000
-                        <input type="text" class="form-control" id="exampleInputHarga1" readonly>
+                        <label for="exampleInputHarga1" class="form-label" >
+                        <input type="text" class="form-control" id="exampleInputHarga1" name="harga" placeholder="Rp. 10.000" readonly>
                     </label>
                     </div>
+                    {{-- UNTUK QUANTITY BISA SESUAI KE KERANJANG SUBMITNYA --}}
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Quantity
-                        <input type="number" class="form-control" id="exampleInputPassword1">
+                        <input type="number" class="form-control" id="exampleInputPassword1" name="quantity">
                     </label>
                     </div>
                     <div class="mb-3 form-check">

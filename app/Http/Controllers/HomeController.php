@@ -81,5 +81,9 @@ class HomeController extends Controller
         return view('auth.passwords.reset');
     }
 
+    public function keranjang()
+    {
+        return view('toko.keranjang');
+    }
 
 }
