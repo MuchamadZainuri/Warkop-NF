@@ -46,6 +46,9 @@ Route::prefix('/')->group(function(){
     Route::get('detail', function () {
         return view('toko.detail');
     });
+    Route::get('keranjang', function () {
+        return view('toko.keranjang');
+    });
 
 });
 
