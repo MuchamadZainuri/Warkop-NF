@@ -35,7 +35,7 @@
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="" class="navbar-brand px-lg-4 m-0">
+            <a href="/" class="navbar-brand px-lg-4 m-0">
                 <h1 class="m-0 display-4 text-uppercase text-white">WARKOP - NF</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">

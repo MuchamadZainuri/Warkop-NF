@@ -88,7 +88,7 @@ Route::prefix('admin')->group(function(){
 
     });
 
-    Route::get('/products/search',[WarkopController::class, 'search']);
+    Route::get('/menu/search',[WarkopController::class, 'search']);
     
 Auth::routes();
 

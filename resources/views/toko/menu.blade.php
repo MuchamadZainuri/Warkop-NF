@@ -28,9 +28,9 @@
             </div>
             <!-- Search Form -->
             <br>
-            <form class="form-inline justify-content-center mb-4" action="/menu" method="get">
+            <form class="form-inline justify-content-center mb-4" action="/menu/search" method="GET">
                 <div class="input-group">
-                    <input type="text" class="form-control p-4" placeholder="Cari Menu" style="height: 30px; width: auto;" id="search">
+                    <input type="text" class="form-control p-4" placeholder="Cari Menu" style="height: 30px;" id="search">
                     <div class="input-group-append">
                         <button class="searchButton btn btn-primary font-weight-bold px-4" type="submit"><i class="fas fa-search fa-lg"></i></button>
                     </div>
