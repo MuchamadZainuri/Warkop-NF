@@ -12,7 +12,8 @@ use App\Models\Supply;
 
 class WarkopController extends Controller
 {
-    public function index()
+
+    public function admin()
     {
         return view('admin.index');
     }
@@ -46,5 +47,7 @@ class WarkopController extends Controller
         $types = Type::all();
         return view('admin.categories', compact('types'));
     }
+
+
 
 }

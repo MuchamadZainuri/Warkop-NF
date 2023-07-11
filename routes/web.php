@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WarkopController;
 use App\Http\Controllers\HomeController;
+use Spatie\Permission\Contracts\Role;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,77 +18,96 @@ use App\Http\Controllers\HomeController;
 
 
 
-Route::prefix('/')->group(function(){
 
-    Route::get('', function () {
-        return view('toko.index');
-    });
-    Route::get('about', function () {
-        return view('toko.about');
-    });
-    Route::get('service', function () {
-        return view('toko.service');
-    });
-    Route::get('menu', function () {
-        return view('toko.menu');
-    });
-    Route::get('contact', function () {
-        return view('toko.contact');
-    });
-    Route::get('testimonial', function () {
-        return view('toko.testimonial');
-    });
-    Route::get('reservation', function () {
-        return view('toko.reservation');
-    });
-    Route::get('loker', function () {
-        return view('toko.loker');
-    });
-    Route::get('detail', function () {
-        return view('toko.detail');
-    });
+    Route::get(
+        'loker', 
+        [HomeController::class, 'loker']
+    )->name('toko.loker')->middleware('iscustomer');
+
+    Route::get(
+        'detail', 
+        [HomeController::class, 'detail']
+    )->name('toko.detail')->middleware('iscustomer');
+
+
+Route::get(
+    'admin', 
+    [WarkopController::class, 'admin']
+)->name('admin.index')->middleware('isAdmin');
+
+Route::middleware(['auth','role:admin'])->name('admin.')->prefix('admin')->group(function() {
+
+
+        Route::get(
+            '/orders',
+            [WarkopController::class, 'orders']
+        )->name('order');
+
+        Route::get(
+            '/products',
+            [WarkopController::class, 'products']
+        )->name('product');
+        
+        Route::get(
+            '/users',
+            [WarkopController::class, 'users']
+        )->name('user');
+        
+        Route::get(
+            '/supply',
+            [WarkopController::class, 'supply']
+        )->name('supply');
+        
+        Route::get(
+            '/categories',
+            [WarkopController::class, 'categories']
+        )->name('category');
 
 });
 
-Route::prefix('admin')->group(function(){
 
-    Route::get(
-        '/', 
-        [WarkopController::class, 'index']
-    )->name('admin.index') ;
-
-    Route::get(
-        '/orders',
-        [WarkopController::class, 'orders']
-    )->name('admin.order');
-
-    Route::get(
-        '/products',
-        [WarkopController::class, 'products']
-    )->name('admin.product');
     
     Route::get(
-        '/users',
-        [WarkopController::class, 'users']
-    )->name('admin.user');
-    
+        '/',
+        [HomeController::class, 'index']
+    )->name('toko.index');
+
     Route::get(
-        '/supply',
-        [WarkopController::class, 'supply']
-    )->name('admin.supply');
-    
+        'about',
+        [HomeController::class, 'about']
+    )->name('toko.about');
+
     Route::get(
-        '/categories',
-        [WarkopController::class, 'categories']
-    )->name('admin.category');
+        'service',
+        [HomeController::class, 'service']
+    )->name('toko.service');
+
+    Route::get(
+        'menu',
+        [HomeController::class, 'menu']
+    )->name('toko.menu');
+
+    Route::get(
+        'contact',
+        [HomeController::class, 'contact']
+    )->name('toko.contact');
+
+    Route::get(
+        'testimonial',
+        [HomeController::class, 'testimonial']
+    )->name('toko.testimonial');
+
+    Route::get(
+        'reservation',
+        [HomeController::class, 'reservation']
+    )->name('toko.reservation');
 
 
+    // 
 
-    });
 
     Route::get('/products/search',[WarkopController::class, 'search']);
     
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     
