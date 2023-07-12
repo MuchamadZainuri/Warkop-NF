@@ -46,7 +46,7 @@
                                     </form>
                             </div>
         @else
-        <a target="" href="/login" class="btn btn-primary btn-effect"> Login </a>
+        <a target="" href="/login" class="btn btn-primary btn-effect" style="border-radius: 8px; position: "> Login </a>
     @endauth
     </li>
 @endsection

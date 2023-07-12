@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -37,8 +38,13 @@ class HomeController extends Controller
     }
 
     public function menu()
-    {
+    {   
+        $products = Product::latest();
+        if(request('search')) {
+            $products->where('name', 'like', '%' . request('search') . '%');
+        }
         return view('toko.menu');
+        
     }
 
     public function contact()

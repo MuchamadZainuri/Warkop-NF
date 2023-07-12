@@ -46,7 +46,7 @@
                                     </form>
                             </div>
         @else
-        <a target="" href="/login" class="btn btn-primary btn-effect"> Login </a>
+        <a target="" href="/login" class="btn btn-primary btn-effect" style="border-radius: 8px;"> Login </a>
     @endauth
     </li>
 @endsection
@@ -63,9 +63,9 @@
             </div>
             <!-- Search Form -->
             <br>
-            <form class="form-inline justify-content-center mb-4" action="/menu/search" method="GET">
+            <form class="form-inline justify-content-center mb-4" action="/menu">
                 <div class="input-group">
-                    <input type="text" class="form-control p-4" placeholder="Cari Menu" style="height: 30px;" id="search">
+                    <input type="text" class="form-control p-4" placeholder="Cari Menu" style="height: 30px;" name="search" value="{{request('search')}}">
                     <div class="input-group-append">
                         <button class="searchButton btn btn-primary font-weight-bold px-4" type="submit"><i class="fas fa-search fa-lg"></i></button>
                     </div>
