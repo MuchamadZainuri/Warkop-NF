@@ -18,7 +18,7 @@
     @auth
             <a class="nav-link text-center" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="img-profile rounded-circle" src="{{asset('assets/dist/img/undraw_profile.svg')}}"> {{ Auth::user()->name }} <span class="caret"></span>
+                                <img class="img-profile rounded-circle" src="{{asset('assets/dist/img/undraw_profile.svg')}}"width="55" > <br> {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu">
