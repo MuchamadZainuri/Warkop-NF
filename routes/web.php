@@ -111,7 +111,10 @@ Route::middleware(['auth','role:admin'])->name('admin.')->prefix('admin')->group
     // 
 
 
-    Route::get('/menu/search',[WarkopController::class, 'search']);
+    Route::get(
+        '/menu/search',
+        [WarkopController::class, 'search']
+    )->name('search');
     
 Auth::routes();
 
