@@ -107,6 +107,8 @@ Route::middleware(['auth','role:admin'])->name('admin.')->prefix('admin')->group
         [HomeController::class, 'reservation']
     )->name('toko.reservation');
 
+    Route::get('/detail/{id}', [HomeController::class, 'detail'])->name('detail');
+    Route::get('/keranjang', [HomeController::class, 'keranjang'])->name('keranjang');
 
     // 
 

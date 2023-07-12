@@ -46,7 +46,7 @@
                                     </form>
                             </div>
         @else
-        <a target="" href="/login" class="btn btn-primary btn-effect"> Login </a>
+        <a target="" href="/login" class="btn btn-primary btn-effect" style="border-radius: 8px;"> Login </a>
     @endauth
     </li>       
 @endsection
@@ -78,16 +78,17 @@
         </div>
     
         <div class="col-md-8">
-            <form action="/keranjang" method="GET">
+            <form action="{{ route('keranjang') }}" method="GET">
+                <input type="hidden" name="id" value="{{ $product->id }}">
                     <div class="mb-3">
                         {{-- NAMA PRODUK SESUAIKAN SAMA DENGAN MENU YANG DIPILIH HARUS SESUAI DI DATABASE--}}
                         <label for="name" class="form-label">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Hot Caffe Americano" readonly>
+                        <input type="text" class="form-control" id="name" name="name"  value="{{ $product->name }}"  readonly>
                         </label>
                     </div>
                     <div class="mb-3">
                         <label for="price" class="form-label" >
-                        <input type="text" class="form-control" id="price" name="price" placeholder="Rp. 10.000" readonly>
+                        <input type="text" class="form-control" id="price" name="price" value="{{ $product->price }}" readonly>
                     </label>
                     </div>
                     {{-- UNTUK QUANTITY BISA SESUAI KE KERANJANG SUBMITNYA --}}
