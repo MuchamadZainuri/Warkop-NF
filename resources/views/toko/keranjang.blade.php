@@ -44,9 +44,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><?php echo $_GET['nama']; ?></td>
-                            <td><?php echo $_GET['harga']; ?></td>
-                            <td><?php echo $_GET['quantity']; ?></td>
+                            <td><?php echo $_GET['name']; ?></td>
+                            <td><?php echo $_GET['price']; ?></td>
+                            <td><?php echo $_GET['qty']; ?></td>
                         </tr>
                         <!-- Tambahkan baris ini untuk setiap produk dalam keranjang -->
                         <!-- <tr>
