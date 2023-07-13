@@ -40,8 +40,8 @@
                             <th>No</th>
                             <th>Code</th>
                             <th>Date</th>
-                            <th>Customer</th>
                             <th>Product</th>
+                            <th>Address</th>
                             <th>Quantity</th>
                             <th>Price</th>
                             <th>Aksi</th>
@@ -57,18 +57,20 @@
                         <td>{{ $no++ }}</td> 
                         <td>{{ $order->code }}</td> 
                         <td>{{ $order->date }}</td> 
-                        <td>{{ $order->user->name }}</td> 
                         <td>{{ $order->product->name }}</td> 
+                        <td>{{$order->user->address}}</td>
                         <td>{{ $order->qty }}</td> 
                         <td>{{ $order->product->price * $order->qty}}</td>
+                        <td>
+                                                <a href="{{ route('keranjang.edit',$order->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                                                <form action="{{ route('keranjang.delete',$order->id) }}" method="POST" class="d-inline">
+                                                    @csrf
+                                                    @method('delete')
+                                                    <button class="btn btn-primary btn-sm" onclick="return confirm('Are you sure?')">Cancle</button>
+                                                </form>
+                        </td>
                         </tr>
                         @endforeach
-                        <!-- Tambahkan baris ini untuk setiap produk dalam keranjang -->
-                        <!-- <tr>
-                            <td>Nama Produk</td>
-                            <td>Harga</td>
-                            <td>Quantity</td>
-                        </tr> -->
                     </tbody>
                 </table>
             </div>

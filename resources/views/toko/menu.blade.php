@@ -30,7 +30,7 @@
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
                                 </a>
-                                <a class="dropdown-item" href="{{ route('keranjang') }}">
+                                <a class="dropdown-item" href="{{ route('keranjang.index') }}">
                                     <i class="fas fa-shopping-cart fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Keranjang
                                 </a>
@@ -91,13 +91,13 @@
                 {{-- MENU COFFE | PERTAMA --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                    <a href="detail/{{ $coffeeProducts[0]->id }}" class="btn">
+                    <a href="keranjang/detail/{{ $coffeeProducts[0]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/hot-caffe-american0.jpg" alt="">
                         <h5 class="menu-price">10K</h5>
                     </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $coffeeProducts[0]->id }}"><h4 class="menu-item-name">Caffe Americano</h4></a>
+                        <a href="keranjang/detail/{{ $coffeeProducts[0]->id }}"><h4 class="menu-item-name">Caffe Americano</h4></a>
                         <p class="m-0">Bidikan espresso dengan air panas di atasnya menciptakan lapisan crema yang tipis
                             berpuncak pada cangkir yang sangat kaya ini dengan kedalaman dan nuansa</p>
                     </div>
@@ -105,13 +105,13 @@
                 {{-- MENU COFFE | KEDUA --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                        <a href="detail/{{ $coffeeProducts[1]->id }}" class="btn">
+                        <a href="keranjang/detail/{{ $coffeeProducts[1]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/hot-esspress0.jpg" alt="">
                         <h5 class="menu-price">10K</h5>
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $coffeeProducts[1]->id }}"><h4 class="menu-item-name">Hot Esspresso</h4></a>
+                        <a href="keranjang/detail/{{ $coffeeProducts[1]->id }}"><h4 class="menu-item-name">Hot Esspresso</h4></a>
                         <p class="m-0">Espresso Roast khas kami yang halus dengan rasa yang kaya
                             dan rasa manis karamel adalah inti dari semua yang kami lakukan.</p>
                     </div>
@@ -119,13 +119,13 @@
                 {{-- MENU COFFE | KETIGA --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                        <a href="detail/{{ $coffeeProducts[2]->id }}" class="btn">
+                        <a href="keranjang/detail/{{ $coffeeProducts[2]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/hot-flat-wh1te.jpg" alt="">
                         <h5 class="menu-price">10K</h5>
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $coffeeProducts[2]->id }}"><h4 class="menu-item-name">Hot Flat White</h4></a>
+                        <a href="keranjang/detail/{{ $coffeeProducts[2]->id }}"><h4 class="menu-item-name">Hot Flat White</h4></a>
                         <p class="m-0">Tembakan ristretto halus dari espresso mendapatkan jumlah kukus yang sempurna
                             susu murni untuk menciptakan rasa yang tidak terlalu kuat, tidak terlalu kental, dan pas.</p>
                     </div>
@@ -133,13 +133,13 @@
                 {{-- MENU COFFE | KEEMPAT --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                        <a href="detail/{{ $coffeeProducts[3]->id }}" class="btn">
+                        <a href="keranjang/detail/{{ $coffeeProducts[3]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/iced-flat-white.jpg" alt="">
                         <h5 class="menu-price">10K</h5>
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $coffeeProducts[3]->id }}"><h4 class="menu-item-name">Iced Flat White</h4></a>
+                        <a href="keranjang/detail/{{ $coffeeProducts[3]->id }}"><h4 class="menu-item-name">Iced Flat White</h4></a>
                         <p class="m-0">Tembakan espresso ristretto yang halus mendapatkan jumlah susu murni yang sempurna
                             dan es untuk menciptakan rasa yang tidak terlalu kuat, tidak terlalu kental, dan pas.</p>
                     </div>
@@ -147,13 +147,13 @@
                 {{-- MENU COFFE | KELIMA --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                        <a href="detail/{{ $coffeeProducts[4]->id }}" class="btn">
+                        <a href="keranjang/detail/{{ $coffeeProducts[4]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/iced-caramel-macchiat0.jpg" alt="">
                         <h5 class="menu-price">12K</h5>
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $coffeeProducts[4]->id }}"><h4 class="menu-item-name">Iced Caramel Macchiato</h4></a>
+                        <a href="keranjang/detail/{{ $coffeeProducts[4]->id }}"><h4 class="menu-item-name">Iced Caramel Macchiato</h4></a>
                         <p class="m-0">Kami mengombinasikan espresso kaya rasa dengan sirup rasa vanila,
                             susu dan es, lalu tambahkan dengan gerimis karamel untuk hasil akhir yang sangat manis.</p>
                     </div>
@@ -161,13 +161,13 @@
                 {{-- MENU COFFE | KEENAM --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                        <a href="detail/{{ $coffeeProducts[5]->id }}" class="btn">
+                        <a href="keranjang/detail/{{ $coffeeProducts[5]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/iced-coffe-with-m1lk.jpg" alt="">
                         <h5 class="menu-price">13K</h5>
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $coffeeProducts[5]->id }}"><h4 class="menu-item-name">Iced Coffe With Milk</h4></a>
+                        <a href="keranjang/detail/{{ $coffeeProducts[5]->id }}"><h4 class="menu-item-name">Iced Coffe With Milk</h4></a>
                         <p class="m-0">Iced Coffee Blend yang baru diseduh dengan susu disajikan
                             dingin dan manis di atas es. Angkat yang benar-benar, serius, dan menyegarkan untuk hari apa pun.</p>
                     </div>
@@ -180,13 +180,13 @@
                 {{-- MENU SNACK | PERTAMA --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                        <a href="detail/{{ $snackProducts[0]->id }}" class="btn">
+                        <a href="keranjang/detail/{{ $snackProducts[0]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-hot-breaad.jpg" alt="">
                         <h5 class="menu-price">8K</h5>
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $snackProducts[0]->id }}"><h4 class="menu-item-name">Hot Bread</h4></a>
+                        <a href="keranjang/detail/{{ $snackProducts[0]->id }}"><h4 class="menu-item-name">Hot Bread</h4></a>
                         <p class="m-0">Roti yang baru saja dipanggang dan masih hangat saat disajikan. 
                             Roti ini lembut dan gurih dengan aroma yang menggoda. 
                             Bisa digunakan untuk sarapan atau cemilan, dan dapat dinikmati dengan beragam topping atau saus.</p>
@@ -195,13 +195,13 @@
                 {{-- MENU SNACK | KEDUA --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                        <a href="detail/{{ $snackProducts[1]->id }}" class="btn">
+                        <a href="keranjang/detail/{{ $snackProducts[1]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-minipizza.jpg" alt="">
                         <h5 class="menu-price">10K</h5>
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $snackProducts[1]->id }}"><h4 class="menu-item-name">Mini Pizza</h4></a>
+                        <a href="keranjang/detail/{{ $snackProducts[1]->id }}"><h4 class="menu-item-name">Mini Pizza</h4></a>
                         <p class="m-0">Varian pizza yang lebih kecil dari ukuran biasa, 
                             biasanya lebih mudah untuk dimakan secara individual. 
                             Mini pizza memiliki crust yang tipis dan dilapisi dengan saus tomat, keju, 
@@ -211,13 +211,13 @@
                 {{-- MENU SNACK | KETIGA --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                        <a href="detail/{{ $snackProducts[2]->id }}" class="btn">
+                        <a href="keranjang/detail/{{ $snackProducts[2]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-cookies.jpg" alt="">
                         <h5 class="menu-price">6K</h5>
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $snackProducts[2]->id }}"><h4 class="menu-item-name">Cookies</h4></a>
+                        <a href="keranjang/detail/{{ $snackProducts[2]->id }}"><h4 class="menu-item-name">Cookies</h4></a>
                         <p class="m-0">Makanan kering yang terbuat dari campuran tepung, gula, mentega atau minyak sayur, 
                             telur, dan bahan-bahan tambahan seperti coklat chips, atau kacang-kacangan. 
                             Cookies dapat ditemukan dalam berbagai rasa dan bentuk, dari yang tradisional hingga yang lebih kreatif. </p>
@@ -226,13 +226,13 @@
                 {{-- MENU SNACK | KEEMPAT --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                        <a href="detail/{{ $snackProducts[3]->id }}" class="btn">
+                        <a href="keranjang/detail/{{ $snackProducts[3]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-oreo.jpg" alt="">
                         <h5 class="menu-price">5K</h5>
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $snackProducts[3]->id }}"><h4 class="menu-item-name">Oreo</h4></a>
+                        <a href="keranjang/detail/{{ $snackProducts[3]->id }}"><h4 class="menu-item-name">Oreo</h4></a>
                         <p class="m-0">Oreo dikenal dengan cetakan "Oreo" di atasnya dan memiliki dua 
                             lapisan tepung gandum hitam dengan lapisan keju krim di tengah. 
                             Oreo dapat dimakan sendiri atau digunakan sebagai bahan dalam berbagai resep.</p>
@@ -241,13 +241,13 @@
                 {{-- MENU SNACK | KELIMA --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                        <a href="detail/{{ $snackProducts[4]->id }}" class="btn">
+                        <a href="keranjang/detail/{{ $snackProducts[4]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-popcorn.jpg" alt="">
                         <h5 class="menu-price">5K</h5>
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $snackProducts[4]->id }}"><h4 class="menu-item-name">PopCorn</h4></a>
+                        <a href="keranjang/detail/{{ $snackProducts[4]->id }}"><h4 class="menu-item-name">PopCorn</h4></a>
                         <p class="m-0">Popcorn dapat disajikan dengan berbagai variasi rasa, seperti gula, 
                             garam, atau rempah-rempah. 
                             Popcorn juga dapat digunakan sebagai bahan dasar dalam berbagai makanan lain seperti trail mix. </p>
@@ -256,13 +256,13 @@
                 {{-- MENU SNACK | KEENAM --}}
                 <div class="row align-items-center mb-5 menu-item">
                     <div class="col-4 col-sm-3">
-                        <a href="detail/{{ $snackProducts[5]->id }}" class="btn">
+                        <a href="keranjang/detail/{{ $snackProducts[5]->id }}" class="btn">
                         <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-french-fries.jpg" alt="">
                         <h5 class="menu-price">6K</h5>
                         </a>
                     </div>
                     <div class="col-8 col-sm-9">
-                        <a href="detail/{{ $snackProducts[5]->id }}"><h4 class="menu-item-name">French Fries</h4></a>
+                        <a href="keranjang/detail/{{ $snackProducts[5]->id }}"><h4 class="menu-item-name">French Fries</h4></a>
                         <p class="m-0">French fries adalah makanan yang dibuat dari irisan kentang 
                             yang digoreng dalam minyak panas hingga renyah.
                             French fries dapat disajikan dengan berbagai saus seperti saus tomat, 

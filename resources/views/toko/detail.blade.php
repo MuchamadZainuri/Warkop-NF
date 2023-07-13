@@ -96,7 +96,7 @@
                     {{-- UNTUK QUANTITY BISA SESUAI KE KERANJANG SUBMITNYA --}}
                     <div class="mb-3">
                         <label for="qty" class="form-label">Quantity
-                            <input type="number" class="form-control" id="qty" name="qty">
+                            <input type="number" class="form-control" id="qty" name="qty" value="1">
                         </label>
                     </div>
                     <div class="mb-3 form-check">

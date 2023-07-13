@@ -30,7 +30,7 @@
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
                                 </a>
-                                <a class="dropdown-item" href="{{ route('keranjang') }}">
+                                <a class="dropdown-item" href="{{ route('keranjang.index') }}">
                                     <i class="fas fa-shopping-cart fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Keranjang
                                 </a>

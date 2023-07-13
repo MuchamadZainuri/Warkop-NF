@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Order;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -39,30 +40,29 @@ class HomeController extends Controller
     }
 
     public function search()
-    {   
+    {
         $products = Product::latest();
-        if(request('search')) {
+        if (request('search')) {
             $products->where('name', 'like', '%' . request('search') . '%');
         }
         return view('toko.menu');
-        
     }
 
     public function menu()
-{
-    $coffeeProducts = Product::where('type_id', 2)->latest();
-    $snackProducts = Product::where('type_id', 1)->latest();
+    {
+        $coffeeProducts = Product::where('type_id', 2)->latest();
+        $snackProducts = Product::where('type_id', 1)->latest();
 
-    if (request('search')) {
-        $coffeeProducts->where('name', 'like', '%' . request('search') . '%');
-        $snackProducts->where('name', 'like', '%' . request('search') . '%');
+        if (request('search')) {
+            $coffeeProducts->where('name', 'like', '%' . request('search') . '%');
+            $snackProducts->where('name', 'like', '%' . request('search') . '%');
+        }
+
+        $coffeeProducts = $coffeeProducts->get();
+        $snackProducts = $snackProducts->get();
+
+        return view('toko.menu', compact('coffeeProducts', 'snackProducts'));
     }
-
-    $coffeeProducts = $coffeeProducts->get();
-    $snackProducts = $snackProducts->get();
-
-    return view('toko.menu', compact('coffeeProducts', 'snackProducts'));
-}
 
 
     public function contact()
@@ -89,11 +89,11 @@ class HomeController extends Controller
     {
         // Mengambil informasi produk dari database berdasarkan $productId
         $product = Product::find($productId);
-    
+
         // Mengirim variabel $product ke view detail.blade.php
         return view('toko.detail', ['product' => $product]);
     }
-    
+
 
     public function login()
     {
@@ -112,26 +112,57 @@ class HomeController extends Controller
 
     public function keranjang()
     {
-        $orders = Order::all(); 
+        $orders = Order::all();
         return view('toko.keranjang', compact('orders'));
     }
 
-    public function store(Request $request) 
-     { 
-         $request->validate([ 
-             'name' => 'required|unique:types|min:5|alpha_space', 
-             'code' => 'required', 
-             'date' => 'required',
-             'user' => 'required',
-             'product' => 'required',
-             'qty' => 'required',
-             'price' => 'required'
-         ],[ 
-        
-         ]); 
-  
-         Order::create($request->all()); 
-  
-         return redirect()->route('admin.category')->with('success', 'category created successfully.'); 
-     }
+    public function store(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|unique:types|min:5|alpha_space',
+            'code' => 'required',
+            'date' => 'required',
+            'user' => 'required',
+            'product' => 'required',
+            'qty' => 'required',
+            'price' => 'required'
+        ]);
+
+        Order::create($request->all());
+
+        return redirect()->route('toko.keranjang')->with('success', 'category created successfully.');
+    }
+
+    public function edit($id)
+    {
+        $order = Order::findOrFail($id);
+        $product = Product::all();
+        $user = User::all();
+        return view('toko/edit', compact('order', 'product', 'user'));
+    }
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'code' => 'required',
+            'date' => 'required',
+            'status' => 'required',
+            'qty' => 'required',
+            'note' => 'required',
+            'product' => 'required',
+            'user' => 'required',
+        ]);
+
+        $order = Order::findOrFail($id);
+        $order->update($request->all());
+
+        return redirect()->route('toko.keranjang')->with('success', 'Order updated successfully.');
+    }
+
+    public function delete($id)
+    {
+        $order = Order::findOrFail($id);
+        $order->delete();
+
+        return redirect()->route('toko.keranjang')->with('success', 'Order deleted successfully.');
+    }
 }

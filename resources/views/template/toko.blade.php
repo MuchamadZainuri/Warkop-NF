@@ -24,11 +24,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="assets/plugins/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/plugins/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="{{asset('assets/plugins/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/plugins/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="assets/dist/css/style.min.css" rel="stylesheet">
+    <link href="{{asset('assets/dist/css/style.min.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -112,19 +112,19 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/plugins/easing/easing.min.js"></script>
-    <script src="assets/plugins/waypoints/waypoints.min.js"></script>
-    <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
-    <script src="assets/plugins/tempusdominus/js/moment.min.js"></script>
-    <script src="assets/plugins/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="assets/plugins/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="{{asset('assets/plugins/easing/easing.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/tempusdominus/js/moment.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/tempusdominus/js/moment-timezone.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
 
     <!-- Contact Javascript File -->
-    <script src="assets/dist/js/jqBootstrapValidation.min.js"></script>
-    <script src="assets/dist/js/contact.js"></script>
+    <script src="{{asset('assets/dist/js/jqBootstrapValidation.min.js')}}"></script>
+    <script src="{{asset('assets/dist/js/contact.js')}}"></script>
 
     <!-- Template Javascript -->
-    <script src="assets/dist/js/main.js"></script>
+    <script src="{{asset('assets/dist/js/main.js')}}"></script>
 </body>
 
 </html>
