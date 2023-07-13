@@ -117,21 +117,29 @@ class HomeController extends Controller
     }
 
     public function store(Request $request)
-    {
-        $request->validate([
-            'name' => 'required|unique:types|min:5|alpha_space',
-            'code' => 'required',
-            'date' => 'required',
-            'user' => 'required',
-            'product' => 'required',
-            'qty' => 'required',
-            'price' => 'required'
-        ]);
+{
+    $request->validate([
+        'id' => 'required',
+        'qty' => 'required|numeric|min:1',
+    ]);
 
-        Order::create($request->all());
+    $productId = $request->input('id');
+    $quantity = $request->input('qty');
 
-        return redirect()->route('keranjang.index')->with('success', 'category created successfully.');
-    }
+    $product = Product::findOrFail($productId);
+    $code = $product->code;
+
+    // Lakukan proses penyimpanan ke keranjang atau melakukan operasi lain yang sesuai dengan kebutuhan aplikasi.
+
+    $order = new Order();
+    $order->product_id = $productId;
+    $order->qty = $quantity;
+    $order->code = $code; // Assign nilai code dari produk ke order
+    $order->date = now(); // Assign tanggal saat ini
+
+    return redirect()->route('keranjang.index')->with('success', 'Produk berhasil ditambahkan ke keranjang.');
+}
+
 
     public function edit($id)
     {
