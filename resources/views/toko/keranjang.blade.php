@@ -37,17 +37,32 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Nama Produk</th>
-                            <th>Harga</th>
+                            <th>No</th>
+                            <th>Code</th>
+                            <th>Date</th>
+                            <th>Customer</th>
+                            <th>Product</th>
                             <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><?php echo $_GET['name']; ?></td>
-                            <td><?php echo $_GET['price']; ?></td>
-                            <td><?php echo $_GET['qty']; ?></td>
+                        @php 
+                            $no = 1; 
+                        @endphp 
+                        @foreach ($orders as $order) 
+                        <tr> 
+                        <td>{{ $no++ }}</td> 
+                        <td>{{ $order->code }}</td> 
+                        <td>{{ $order->date }}</td> 
+                        <td>{{ $order->user->name }}</td> 
+                        <td>{{ $order->product->name }}</td> 
+                        <td>{{ $order->qty }}</td> 
+                        <td>{{ $order->product->price * $order->qty}}</td>
                         </tr>
+                        @endforeach
                         <!-- Tambahkan baris ini untuk setiap produk dalam keranjang -->
                         <!-- <tr>
                             <td>Nama Produk</td>

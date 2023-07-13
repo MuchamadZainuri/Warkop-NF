@@ -78,7 +78,7 @@
             </div>
 
             <div class="col-md-8">
-                <form action="{{ route('keranjang') }}" method="GET">
+                <form action="{{ route('keranjang.store') }}" method="POST">
                     <input type="hidden" name="id" value="{{ $product->id }}">
                     <div class="mb-3">
                         {{-- NAMA PRODUK SESUAIKAN SAMA DENGAN MENU YANG DIPILIH HARUS SESUAI DI DATABASE --}}

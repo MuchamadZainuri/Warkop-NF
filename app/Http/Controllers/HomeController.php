@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Order;
 
 class HomeController extends Controller
 {
@@ -111,7 +112,26 @@ class HomeController extends Controller
 
     public function keranjang()
     {
-        return view('toko.keranjang');
+        $orders = Order::all(); 
+        return view('toko.keranjang', compact('orders'));
     }
 
+    public function store(Request $request) 
+     { 
+         $request->validate([ 
+             'name' => 'required|unique:types|min:5|alpha_space', 
+             'code' => 'required', 
+             'date' => 'required',
+             'user' => 'required',
+             'product' => 'required',
+             'qty' => 'required',
+             'price' => 'required'
+         ],[ 
+        
+         ]); 
+  
+         Order::create($request->all()); 
+  
+         return redirect()->route('admin.category')->with('success', 'category created successfully.'); 
+     }
 }

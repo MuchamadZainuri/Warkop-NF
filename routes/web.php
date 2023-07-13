@@ -177,6 +177,7 @@ Route::group(['middleware' => ['auth','role:admin']], function () {
         )->name('keranjang');
 
     // 
+    Route::post('store', [HomeController::class, 'store'])->name('keranjang.store');
 
 
     Route::get(
