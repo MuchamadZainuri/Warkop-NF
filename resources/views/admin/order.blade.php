@@ -13,7 +13,7 @@
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
+                        <div class="card-header py-3 ">
                             <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
                         </div>
                         <div class="card-body">
@@ -28,6 +28,7 @@
                                             <th>Product</th>
                                             <th>Qty</th>
                                             <th>Total</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -42,7 +43,19 @@
                                             <td>{{ $order->user->name }}</td>
                                             <td>{{ $order->product->name }}</td>
                                             <td>{{ $order->qty }}</td>
-                                            <td>{{ $order->total }}</td>
+                                            <td>{{ 
+                                            $order->product->price *
+                                            $order->qty
+                                            }}</td>
+                                            <td>
+                                                <a href="{{ route('order.detail',$order->id) }}" class="btn btn-info btn-sm">View</a>
+                                                <a href="{{ route('order.edit',$order->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                                                <form action="{{ route('order.delete',$order->id) }}" method="POST" class="d-inline">
+                                                    @csrf
+                                                    @method('delete')
+                                                    <button class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
+                                                </form>
+                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>

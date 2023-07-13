@@ -18,10 +18,18 @@
         rel="stylesheet">
         <!-- Custom styles for this page -->
         <link href="{{asset('assets/plugins/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
+        {{-- bootsrap 5 css --}}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!-- Custom styles for this template-->
     <link href="{{asset('assets/dist/css/sb-admin-2.min.css')}}" rel="stylesheet">
 
+<style>
+    td,p{
+        color: #000;
+    }
+</style>
 
 </head>
 
@@ -343,10 +351,16 @@
         </div>
     </div>
 
+
+
     <!-- Bootstrap core JavaScript-->
     <script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
+    <!-- Bootstrap 5 JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
     <!-- Core plugin JavaScript-->
     <script src="{{asset('assets/plugins/jquery-easing/jquery.easing.min.js')}}"></script>
 
