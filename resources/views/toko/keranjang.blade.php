@@ -58,7 +58,7 @@
                         <td>{{ $order->code }}</td> 
                         <td>{{ $order->date }}</td> 
                         <td>{{ $order->product->name }}</td> 
-                        <td>{{$order->user->address}}</td>
+                        <td>{{ $order->user->address}}</td>
                         <td>{{ $order->qty }}</td> 
                         <td>{{ $order->product->price * $order->qty}}</td>
                         <td>
@@ -66,7 +66,7 @@
                                                 <form action="{{ route('keranjang.delete',$order->id) }}" method="POST" class="d-inline">
                                                     @csrf
                                                     @method('delete')
-                                                    <button class="btn btn-primary btn-sm" onclick="return confirm('Are you sure?')">Cancle</button>
+                                                    <button class="btn btn-primary btn-sm" onclick="return confirm('Anda yakin ingin menghapus data ini?')">Delete</button>
                                                 </form>
                         </td>
                         </tr>

@@ -130,7 +130,7 @@ class HomeController extends Controller
 
         Order::create($request->all());
 
-        return redirect()->route('toko.keranjang')->with('success', 'category created successfully.');
+        return redirect()->route('keranjang.index')->with('success', 'category created successfully.');
     }
 
     public function edit($id)
@@ -155,7 +155,7 @@ class HomeController extends Controller
         $order = Order::findOrFail($id);
         $order->update($request->all());
 
-        return redirect()->route('toko.keranjang')->with('success', 'Order updated successfully.');
+        return redirect()->route('keranjang.update')->with('success', 'Order updated successfully.');
     }
 
     public function delete($id)
@@ -163,6 +163,6 @@ class HomeController extends Controller
         $order = Order::findOrFail($id);
         $order->delete();
 
-        return redirect()->route('toko.keranjang')->with('success', 'Order deleted successfully.');
+        return redirect()->route('keranjang.index')->with('success', 'Order deleted successfully.');
     }
 }

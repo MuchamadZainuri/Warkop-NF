@@ -79,7 +79,22 @@
 
             <div class="col-md-8">
                 <form action="{{ route('keranjang.store') }}" method="POST">
+                    @csrf
                     <input type="hidden" name="id" value="{{ $product->id }}">
+                    <div class="mb-3">
+                        {{-- CODE PRODUK SESUAIKAN SAMA DENGAN MENU YANG DIPILIH HARUS SESUAI DI DATABASE --}}
+                        <label for="code" class="form-label">
+                            <input type="text" class="form-control" id="code" name="code"
+                                value="{{ $product->code }}" readonly>
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        {{-- DATE PESANAN OTOMATIS SESUAI HARI TRANSAKSI --}}
+                        <label for="date" class="form-label">
+                            <input type="date" class="form-control" id="date" name="date"
+                                value="{{ date('Y-m-d')}}" readonly>
+                        </label>
+                    </div>
                     <div class="mb-3">
                         {{-- NAMA PRODUK SESUAIKAN SAMA DENGAN MENU YANG DIPILIH HARUS SESUAI DI DATABASE --}}
                         <label for="name" class="form-label">
@@ -98,6 +113,9 @@
                         <label for="qty" class="form-label">Quantity
                             <input type="number" class="form-control" id="qty" name="qty" value="1">
                         </label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="note" style="width:220px;" id="note" rows="4" class="form-control" placeholder="Sampaikan pesan anda"></textarea>
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
