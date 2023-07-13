@@ -94,7 +94,7 @@
             <div class="row">
                 <div class="col-lg-4 py-0 py-lg-5">
                     <h1 class="mb-3">Cerita Kami</h1>
-                    <h5 class="mb-3">Memulai usaha dengan modal yang kecil dan hanya menyediakan sedikit menu seperti Hot Esspresso, Hot Bread, Hot Caffe Americano, dan Oreo.</h5>
+                    <h5 class="mb-3">Memulai usaha dengan modal yang kecil dan hanya menyediakan sedikit menu seperti Hot Esspresso, Hot Bread, Caffe Americano, dan Oreo.</h5>
                     <p>Namun, dengan kerja keras dan kreativitas, Warkop NF berkembang dan menambah menu makanan lain seperti Hot Flat White, Iced Flat White, Mini Pizza, Cookies, dll. 
                         Warkop ini menjadi tempat nongkrong yang digemari oleh anak muda karena suasananya yang santai dan harga yang terjangkau. </p>
                 </div>
@@ -206,44 +206,52 @@
                     <h1 class="mb-5">Coffee</h1>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
+                            <a href="/menu" class="btn">
                             <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/hot-caffe-american0.jpg" alt="">
                             <h5 class="menu-price">10K</h5>
+                            </a>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Hot Caffe Americano</h4>
+                            <a href="/menu"><h4 class="menu-item-name">Caffe Americano</h4></a>
                             <p class="m-0">Bidikan espresso dengan air panas di atasnya menciptakan lapisan crema yang tipis
                                 berpuncak pada cangkir yang sangat kaya ini dengan kedalaman dan nuansa.</p>
                         </div>
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
+                            <a href="/menu" class="btn">
                             <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/hot-esspress0.jpg" alt="">
                             <h5 class="menu-price">10K</h5>
+                            </a>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Hot Esspresso</h4>
+                            <a href="/menu"><h4 class="menu-item-name">Hot Esspresso</h4></a>
                             <p class="m-0">Espresso Roast khas kami yang halus dengan rasa yang kaya
                                 dan rasa manis karamel adalah inti dari semua yang kami lakukan.</p>
                         </div>
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
+                            <a href="/menu" class="btn">
                             <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/iced-caramel-macchiat0.jpg" alt="">
                             <h5 class="menu-price">12K</h5>
+                            </a>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Iced Caramel Macchiato</h4>
+                            <a href="/menu"><h4 class="menu-item-name">Iced Caramel Macchiato</h4></a>
                             <p class="m-0">Kami mengombinasikan espresso kaya rasa dengan sirup rasa vanila,
                                 susu dan es, lalu tambahkan dengan gerimis karamel untuk hasil akhir yang sangat manis.</p>
                         </div>
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
+                            <a href="/menu" class="btn">
                             <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/iced-coffe-with-m1lk.jpg" alt="">
                             <h5 class="menu-price">13K</h5>
+                            </a>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Iced Coffe With Milk</h4>
+                            <a href="/menu"><h4 class="menu-item-name">Iced Coffe With Milk</h4></a>
                             <p class="m-0">Iced Coffee Blend yang baru diseduh dengan susu disajikan
                                 dingin dan manis di atas es. Angkat yang benar-benar, serius, dan menyegarkan untuk hari apa pun.</p>
                         </div>
@@ -254,11 +262,13 @@
                     <h1 class="mb-5">Snack</h1>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
+                            <a href="/menu" class="btn">
                             <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-hot-breaad.jpg" alt="">
                             <h5 class="menu-price">8K</h5>
+                             </a>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Hot Bread</h4>
+                            <a href="/menu"><h4 class="menu-item-name">Hot Bread</h4></a>
                             <p class="m-0">Roti yang baru saja dipanggang dan masih hangat saat disajikan. 
                                 Roti ini lembut dan gurih dengan aroma yang menggoda. 
                                 Bisa digunakan untuk sarapan atau cemilan, dan dapat dinikmati dengan beragam topping atau saus.</p>
@@ -266,11 +276,13 @@
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
+                            <a href="/menu" class="btn">
                             <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-minipizza.jpg" alt="">
                             <h5 class="menu-price">10K</h5>
+                            </a>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Mini Pizza</h4>
+                            <a href="/menu"><h4 class="menu-item-name">Mini Pizza</h4></a>
                             <p class="m-0">Varian pizza yang lebih kecil dari ukuran biasa, 
                                 biasanya lebih mudah untuk dimakan secara individual. 
                                 Mini pizza memiliki crust yang tipis dan dilapisi dengan saus tomat, keju, 
@@ -279,11 +291,13 @@
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
+                            <a href="/menu" class="btn">
                             <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-cookies.jpg" alt="">
                             <h5 class="menu-price">6K</h5>
+                            </a>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Cookies</h4>
+                            <a href="/menu"><h4 class="menu-item-name">Cookies</h4></a>
                             <p class="m-0">Makanan kering yang terbuat dari campuran tepung, gula, mentega atau minyak sayur, 
                                 telur, dan bahan-bahan tambahan seperti coklat chips, atau kacang-kacangan. 
                                 Cookies dapat ditemukan dalam berbagai rasa dan bentuk, dari yang tradisional hingga yang lebih kreatif.</p>
@@ -291,11 +305,13 @@
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
+                            <a href="/menu" class="btn">
                             <img class="w-100 rounded-circle mb-3 mb-sm-0" src="assets/dist/img/snck-oreo.jpg" alt="">
                             <h5 class="menu-price">5K</h5>
+                            </a>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Oreo</h4>
+                            <a href="/menu"><h4 class="menu-item-name">Oreo</h4></a>
                             <p class="m-0">Oreo dikenal dengan cetakan "Oreo" di atasnya dan memiliki dua 
                                 lapisan tepung gandum hitam dengan lapisan keju krim di tengah. 
                                 Oreo dapat dimakan sendiri atau digunakan sebagai bahan dalam berbagai resep.</p>

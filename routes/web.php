@@ -22,7 +22,7 @@ use App\Http\Controllers\UserController;
 */
 
 
-
+// ROUTE AKSES HALAMAN
 
     Route::get(
         'loker', 
@@ -45,7 +45,7 @@ Route::get(
     [WarkopController::class, 'admin']
 )->name('admin.index')->middleware('isAdmin');
 
-
+//ROUTE KHUSUS BACK END
 
 Route::group(['middleware' => ['auth','role:admin']], function () {
 
@@ -129,7 +129,7 @@ Route::group(['middleware' => ['auth','role:admin']], function () {
 
 });
 
-
+//ROUTE KHUSUS FRONT END
     
     Route::get(
         '/',
@@ -166,8 +166,15 @@ Route::group(['middleware' => ['auth','role:admin']], function () {
         [HomeController::class, 'reservation']
     )->name('toko.reservation');
 
-    Route::get('/detail/{id}', [HomeController::class, 'detail'])->name('detail');
-    Route::get('/keranjang', [HomeController::class, 'keranjang'])->name('keranjang');
+    Route::get(
+        '/detail/{id}', 
+        [HomeController::class, 'detail']
+        )->name('detail');
+
+    Route::get(
+        '/keranjang', 
+        [HomeController::class, 'keranjang']
+        )->name('keranjang');
 
     // 
 
