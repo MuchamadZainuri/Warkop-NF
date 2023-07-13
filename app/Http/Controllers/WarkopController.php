@@ -48,16 +48,4 @@ class WarkopController extends Controller
         return view('admin.categories', compact('types'));
     }
     
-    // ini buat search fitur tapi belum berhasil//
-    public function search(Request $request)
-    {
-        if($request->has('search')){
-            $products = Product::where('nama','price','%'.$request->search.'%')->get();
-        }
-        else{
-            $products = Product::all();
-        }
-
-        return view('menu',['products'=>$products]);
-    }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -36,10 +37,32 @@ class HomeController extends Controller
         return view('toko.service');
     }
 
-    public function menu()
-    {
+    public function search()
+    {   
+        $products = Product::latest();
+        if(request('search')) {
+            $products->where('name', 'like', '%' . request('search') . '%');
+        }
         return view('toko.menu');
+        
     }
+
+    public function menu()
+{
+    $coffeeProducts = Product::where('type_id', 2)->latest();
+    $snackProducts = Product::where('type_id', 1)->latest();
+
+    if (request('search')) {
+        $coffeeProducts->where('name', 'like', '%' . request('search') . '%');
+        $snackProducts->where('name', 'like', '%' . request('search') . '%');
+    }
+
+    $coffeeProducts = $coffeeProducts->get();
+    $snackProducts = $snackProducts->get();
+
+    return view('toko.menu', compact('coffeeProducts', 'snackProducts'));
+}
+
 
     public function contact()
     {
@@ -61,10 +84,15 @@ class HomeController extends Controller
         return view('toko.loker');
     }
 
-    public function detail()
+    public function detail($productId)
     {
-        return view('toko.detail');
+        // Mengambil informasi produk dari database berdasarkan $productId
+        $product = Product::find($productId);
+    
+        // Mengirim variabel $product ke view detail.blade.php
+        return view('toko.detail', ['product' => $product]);
     }
+    
 
     public function login()
     {

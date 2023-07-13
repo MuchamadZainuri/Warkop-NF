@@ -166,11 +166,16 @@ Route::group(['middleware' => ['auth','role:admin']], function () {
         [HomeController::class, 'reservation']
     )->name('toko.reservation');
 
+    Route::get('/detail/{id}', [HomeController::class, 'detail'])->name('detail');
+    Route::get('/keranjang', [HomeController::class, 'keranjang'])->name('keranjang');
 
     // 
 
 
-    Route::get('/menu/search',[WarkopController::class, 'search']);
+    Route::get(
+        '/menu/search',
+        [WarkopController::class, 'search']
+    )->name('search');
     
 Auth::routes();
 

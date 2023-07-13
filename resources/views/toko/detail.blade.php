@@ -46,7 +46,7 @@
                                     </form>
                             </div>
         @else
-        <a target="" href="/login" class="btn btn-primary btn-effect"> Login </a>
+        <a target="" href="/login" class="btn btn-primary btn-effect" style="border-radius: 8px;"> Login </a>
     @endauth
     </li>       
 @endsection
@@ -70,7 +70,7 @@
     <div class="row">
       <div class="col-md-4">
           <div class="card" style="width: 50%;">
-              <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img" alt=""> 
+              <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img" > 
               <div class="card-body">
                   <p class="card-text">PRODUK</p>
                 </div>
@@ -78,22 +78,23 @@
         </div>
     
         <div class="col-md-8">
-            <form action="/keranjang" method="GET">
+            <form action="{{ route('keranjang') }}" method="GET">
+                <input type="hidden" name="id" value="{{ $product->id }}">
                     <div class="mb-3">
                         {{-- NAMA PRODUK SESUAIKAN SAMA DENGAN MENU YANG DIPILIH HARUS SESUAI DI DATABASE--}}
-                        <label for="exampleInputEmail1" class="form-label">
-                        <input type="text" class="form-control" id="exampleInputEmail1" name="nama" placeholder="Hot Caffe Americano" readonly>
+                        <label for="name" class="form-label">
+                        <input type="text" class="form-control" id="name" name="name"  value="{{ $product->name }}"  readonly>
                         </label>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputHarga1" class="form-label" >
-                        <input type="text" class="form-control" id="exampleInputHarga1" name="harga" placeholder="Rp. 10.000" readonly>
+                        <label for="price" class="form-label" >
+                        <input type="text" class="form-control" id="price" name="price" value="{{ $product->price }}" readonly>
                     </label>
                     </div>
                     {{-- UNTUK QUANTITY BISA SESUAI KE KERANJANG SUBMITNYA --}}
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Quantity
-                        <input type="number" class="form-control" id="exampleInputPassword1" name="quantity">
+                        <label for="qty" class="form-label">Quantity
+                        <input type="number" class="form-control" id="qty" name="qty">
                     </label>
                     </div>
                     <div class="mb-3 form-check">
