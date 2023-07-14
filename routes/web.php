@@ -9,6 +9,7 @@ use App\Http\Controllers\SupplyController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,31 +22,13 @@ use App\Http\Controllers\UserController;
 |
 */
 
-
-// ROUTE AKSES HALAMAN
-
-Route::get(
-    'loker',
-    [HomeController::class, 'loker']
-)->name('toko.loker')->middleware('iscustomer');
-
-Route::get(
-    'detail',
-    [HomeController::class, 'detail']
-)->name('toko.detail')->middleware('iscustomer');
-
-Route::get(
-    'keranjang',
-    [HomeController::class, 'keranjang']
-)->name('toko.keranjang')->middleware('iscustomer');
-
+// ROUTE INDEX ADMIN
 
 Route::get(
     'admin',
     [WarkopController::class, 'admin']
 )->name('admin.index')->middleware('isAdmin');
 
-//ROUTE KHUSUS BACK END
 
 Route::group(['middleware' => ['auth', 'role:admin']], function () {
 
@@ -157,36 +140,38 @@ Route::get(
     [HomeController::class, 'reservation']
 )->name('toko.reservation');
 
+Route::get(
+    'loker',
+    [HomeController::class, 'loker']
+)->name('toko.loker')->middleware('iscustomer');
 
 
-
-Route::prefix('keranjang')->name('keranjang.')->group(function () {
-    Route::get(
-        '/',
-        [HomeController::class, 'keranjang']
-    )->name('index');
-    Route::get(
-        'detail/{id}',
-        [HomeController::class, 'detail']
-    )->name('detail');
-    Route::post(
-        'store',
-        [HomeController::class, 'store']
-    )->name('store');
-    Route::get(
-        'edit/{id}',
-        [HomeController::class, 'edit']
-    )->name('edit');
-    Route::put(
-        'update/{id}',
-        [HomeController::class, 'update']
-    )->name('update');
-    Route::delete(
-        'delete/{id}',
-        [HomeController::class, 'delete']
-    )->name('delete');
-});
-
+        Route::prefix('keranjang')->name('keranjang.')->group(function () {
+            Route::get(
+                '/',
+                [HomeController::class, 'keranjang']
+            )->name('index')->middleware('iscustomer');
+            Route::get(
+                'detail/{id}',
+                [HomeController::class, 'detail']
+            )->name('detail')->middleware('iscustomer');
+            Route::post(
+                'store',
+                [HomeController::class, 'store']
+            )->name('store')->middleware('iscustomer');
+            Route::get(
+                'edit/{id}',
+                [HomeController::class, 'edit']
+            )->name('edit')->middleware('iscustomer');
+            Route::put(
+                'update/{id}',
+                [HomeController::class, 'update']
+            )->name('update')->middleware('iscustomer');
+            Route::delete(
+                'delete/{id}',
+                [HomeController::class, 'delete']
+            )->name('delete')->middleware('iscustomer');
+        });
 
 
 Route::get(
